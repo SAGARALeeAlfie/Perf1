@@ -1,0 +1,40 @@
+//SAGARA,Lee Alfie A.
+
+1. Differentiation of let, const, and var in JavaScript
+// Var example
+var x = 10;
+console.log(x); // 10
+var x = 20;
+console.log(x); // 20
+
+//var: Function-scoped, hoisted with undefined, and allows re-declaration.
+
+// Let example
+let y = 10;
+console.log(y); // 10
+y = 20;
+console.log(y); // 20
+// let y = 30; // SyntaxError: Identifier 'y' has already been declared
+
+let: Block-scoped, hoisted but not initialized (temporal dead zone), and cannot be re-declared in the same scope.
+
+// Const example
+const z = 10;
+console.log(z); // 10
+// z = 20; // TypeError: Assignment to constant variable.
+```
+
+const: Block-scoped, hoisted but not initialized, cannot be re-declared or reassigned (though object/array contents can still be modified).
+
+
+2. Concept of Falsy Values in JavaScript
+In JavaScript, a falsy value is any value that is considered false when evaluated in a boolean context. This means that in conditions such as if statements, these values will behave as though they are false.
+
+Understanding falsy values is important for writing effective and efficient JavaScript code, as it allows developers to handle different scenarios and edge cases.
+
+Understanding falsy values is essential because they help control program flow. For instance, you can use them to simplify conditions like checking if a variable has a valid value or not:
+
+reference:
+https://www.freecodecamp.org/news/differences-between-var-let-const-javascript/
+
+https://www.freecodecamp.org/news/what-are-falsey-values-in-javascript/
